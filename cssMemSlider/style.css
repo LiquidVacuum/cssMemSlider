@@ -1,7 +1,32 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  --dark: #2C2F33;
+  --blurple: #7289DA;
 }
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  background: var(--dark);
+}
+
+.slider {
+  width: 80vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-images {
+  display: flex;
+  transform: translateX(0%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.slider-img {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 20px;
 }
